@@ -4,10 +4,12 @@ import { theme } from "../theme";
 import { RouterProvider } from "react-router";
 import {router} from '../app/Router'
 import { Provider } from "react-redux";
-// импортировать store
+import { store } from "./store";
 
 createRoot(document.getElementById('root')!).render(
    <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
+      <Provider store={store}>
+         <RouterProvider router={router} />
+      </Provider>
    </ThemeProvider>
 )

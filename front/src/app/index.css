@@ -1,5 +1,11 @@
 @import "tailwindcss";
+@import "../../node_modules/github-markdown-css/github-markdown";
 
 .footer{
    background-color: #6db5ef;
+}
+
+.markdown-body{
+    background-color: inherit;
+    color: black
 }
